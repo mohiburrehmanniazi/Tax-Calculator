@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body>
+    <nav class="flex border-2">
+      <div class="flex ml-36 pt-2">
+        <img src="nav1.png" alt="" class="w-6 h-6" /><span
+          class="text-1xl font-bold"
+          >Investomate</span
+        >
+      </div>
+      <div class="flex pt-2 pb-2 pl-4">
+        <img src="nav2.png" alt="" class="w-6 h-6" />
+        <span class="text-1xl font-bold">Asaan Hisab</span>
+      </div>
+    </nav>
+    <div class="container-1 flex border-b-2">
+      <div><img src="Mainlogo.png" alt="" class="w-48 ml-36 pt-4" /></div>
+      <div class="p-8 space-x-10 font-bold ml-40 flex tracking-wide">
+        <a href="" class=" hover:text-red-700" id="try">TAX TOOLS</a
+        ><a href="" class=" hover:text-red-700" id="try1" >RESOURCES</a
+        ><a href="" class=" hover:text-red-700" id="try2">BUSINESS SERVICES</a
+        ><a href="" class=" flex hover:text-red-700" id="try3">
+          <img src="usa-flag.png" alt="" class="w-4 h-4 rounded-full mt-1" />
+          USA SERVICES</a
+        >
+      </div>
+      <div class="pt-6">
+        <button
+          class="border-2 border-red-500 w-32 h-10 rounded text-red-500 hover:bg-red-500 hover:text-white ease-in duration-300" id="try4" 
+        >
+          Sign up
+        </button>
+        <button
+          class="bg-red-500 w-32 h-10 rounded text-white ml-2 hover:bg-red-700 ease-in duration-300" id="try5"
+        >
+          Sign in
+        </button>
+      </div>
+    </div>
+    <div class="container-2 border-2 p-2 flex justify-center">
+      <div class="">
+        <img
+          src="salary-calculator-active.png"
+          alt=""
+          class="w-26 h-26 flex m-auto"
+        />
+        <p class="flex mx-auto font-bold p-2">Tax Calculator</p>
+      </div>
+    </div>
+
+    <div class="calculator border-4 w-10/12 h-96 mx-auto mt-16">
+      <div>
+        <h1 class="text-3xl font-bold justify-center flex mt-6 tracking-wide">
+          Tax Calculator
+        </h1>
+      </div>
+      <div>
+        <select
+          name="year"
+          id="year"
+          class="w-2/6 h-10 border-2 ml-8 mt-4 rounded-md"
+        >
+          <option selected>2023</option>
+        </select>
+        <input
+          type="number"
+          id="inputmain"
+          placeholder="Enter you monthly salary"
+          class="border-2 w-2/6 h-10 ml-8 mt-4 rounded-md placeholder-black"
+        />
+        <button
+          id="btn1"
+          class="w-36 h-10 bg-red-600 rounded-md text-white ml-16 hover:bg-red-700 ease-in duration-300"
+        >
+          Calculator
+        </button>
+      </div>
+
+      <div class="flex font-bold justify-center p-12">
+        <div class="mr-32 border-r-2 border-black pr-8">
+          <h2>Monthly salary</h2>
+          <p class="text-3xl" id="nsal">00.00</p>
+        </div>
+
+        <div class="mr-32 border-r-2 border-black pr-8">
+          <h2>Monthly Tax</h2>
+          <h1 class="text-3xl" id="mtax">00.00</h1>
+        </div>
+
+        <div class="mr-32">
+          <h2>Salary after tax</h2>
+          <h1 class="text-3xl" id="atax">00.00</h1>
+        </div>
+      </div>
+
+      <div class="flex font-bold justify-center ml-14 ">
+        <div class="mr-32 border-r-2 border-black pr-8 ">
+          <h2>Yearly salary</h2>
+          <p class="text-3xl" id="out4">00.00</p>
+        </div>
+  
+        <div class="mr-32 border-r-2 border-black ml-4 pr-8">
+          <h2>Yearly Tax</h2>
+          <h1 class="text-3xl" id="out5">00.00</h1>
+        </div>
+  
+        <div class="mr-32">
+          <h2>Yearly Salary after tax</h2>
+          <h1 class="text-3xl" id="out6">00.00</h1>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    
+
+  </body>
+  <script src="script.js"></script>
+</html>
